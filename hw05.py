@@ -38,7 +38,7 @@ def get_digit():
             print("Error: your input should be only digits.")
             continue
         elif not digit in losti:
-            print("Error: a single digit needs to be in [1, 3].")
+            print("Error: a single digit needs to be in [1,3].")
             continue
         else:
             break
@@ -51,18 +51,15 @@ def check_pattern(letter, digit, lst):
     print("Strings with the pattern:")
     for i in lst:
         if ligit in i:
-            print(i)
+            print(i, end = " ")
         elif letter+"@"+digit in i:
             #for j in len(i):
-            print(i)
+            print(i, end = " ")
         else:
             pass
     print("")
                  
 
-
-#  The function main is INCOMPLETE, you must finish it
-# before you submit
 def main ():
     """ gets a letter-num pair and searches inside a list for matches"""
 
